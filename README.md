@@ -1,6 +1,14 @@
-# Welcome to your Expo app 👋
+# Ease
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Ease is a yearly goal planner app built with [Expo](https://expo.dev) that helps you break down your goals from daily tasks to monthly and yearly views, with a map view for managing tasks.
+
+> 🚧 **This project is still under development and not yet complete. Stay tuned!**
+
+## Preview
+
+| Today | Monthly | Yearly |
+| :---: | :---: | :---: |
+| ![Today screenshot](./assets/ui/screenshot-today.png) | ![Monthly screenshot](./assets/ui/screenshot-monthly.png) | ![Yearly screenshot](./assets/ui/screenshot-yearly.png) |
 
 ## Get started
 
