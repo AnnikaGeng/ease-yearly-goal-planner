@@ -6,9 +6,33 @@ Ease is a yearly goal planner app built with [Expo](https://expo.dev) that helps
 
 ## Preview
 
-| Today | Monthly | Yearly |
-| :---: | :---: | :---: |
-| ![Today screenshot](./assets/ui/screenshot-today.png) | ![Monthly screenshot](./assets/ui/screenshot-monthly.png) | ![Yearly screenshot](./assets/ui/screenshot-yearly.png) |
+|                         Today                         |                          Monthly                          |                         Yearly                          |
+| :---------------------------------------------------: | :-------------------------------------------------------: | :-----------------------------------------------------: |
+| ![Today screenshot](./assets/UI/screenshot-today.png) | ![Monthly screenshot](./assets/UI/screenshot-monthly.png) | ![Yearly screenshot](./assets/UI/screenshot-yearly.png) |
+
+## Tech Stack
+
+- **Expo SDK 54** on the new React Native architecture, with React Compiler turned on
+- **TypeScript**, strict mode
+- **expo-router** for file-based navigation
+- **react-native-reanimated** + **react-native-gesture-handler** + **react-native-draggable-flatlist** for the drag-and-drop priority list
+- **react-native-calendars** for the monthly view
+- **react-native-svg** for the yearly activity heatmap
+- **expo-haptics** for the little bit of tactile feedback when you drag or check off a task
+- UI is modeled after iOS Human Interface Guidelines — colors, spacing, and typography all live in `constants/theme.ts`
+
+No backend yet, everything runs on local/mock data for now while I focus on getting the UI and interactions right first.
+
+## What's Next
+
+- [ ] Finish the Yearly screen (activity heatmap, goal progress, AI insights) — in progress, see `docs/features/in-progress/yearly.md`
+- [ ] Build out the Map view, which is currently just a "Coming soon" placeholder
+- [ ] Add real data persistence (leaning towards AsyncStorage or a lightweight backend, haven't decided yet)
+- [ ] Make the "Smart Suggestion" card actually smart instead of static copy
+- [ ] Swap the emoji tab bar icons for proper SF Symbols / vector icons
+- [ ] Cut a TestFlight build once the core flows feel solid
+
+This is a side project I'm chipping away at in my spare time, so things will be rough around the edges for a while. Ideas and feedback are welcome!
 
 ## Get started
 
@@ -32,27 +56,3 @@ In the output, you'll find options to open the app in a
 - [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
